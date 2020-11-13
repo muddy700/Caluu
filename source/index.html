@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-------------------------------------------- This App Develeped By Muddy (Optimist#700) ------------------------------------------------------------->
+<!------------------------------------------------------ All Rights Reserved --------------------------------------------------------------------------->
+
+<!------------------- Html Document For Caluu App -------------------------------->
+
+   <!------------------- Head Starts Here -------------------------------------------->
+    <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!------------------- Css For The Document --------------------------------------->
+
+    <link rel="stylesheet" href="Color.css">
+    </head>
+
+    <!------------------- Head Ends Here --------------------------------------------->
+
+
+    <!------------------- Body Starts Here ------------------------------------------->
+
+    <body onload="switchOff()"> <!------------------- Bodys' Opening Tag----------------->
+
+            <div id="Frame"> <!------------------- Outer Frame Starts----------------->
+
+                <form id="Form-Frame" name="Caluu">  <!------------------- Inner Frame Starts  (Form) ----------------------->
+                    <div id="Title-Area"> <!------------------- Div For Title Area Starts ----------------------->
+                        <div id="Name-Area"><i>Mo Caluu</i></div>  <!------------------- Div For Name Area ----------------------->
+                        <div id="Time-Area"> <i>Time</i></div> <!------------------- Div For Time Area ----------------------->
+                    </div> <!------------------- Title Area Ends Here ----------------------->
+
+                    <input type="text" name="Display" id="Display-Area" value=""  disabled/> <!--- Display Area ------>
+
+                    <input type="button" value="" id="Power" onclick="onOff()"> <br /> <!--- Power Buttton------>
+                    
+<!--- Power Buttton------>
+
+    <!------------------- Buttons Area Start Here--------------------------------------->
+
+                    <div id="Button-Area"> <!--- Buttons Opening Tag------>
+                        
+    <!------------------- First Row Of Buttons--------------------------------------->
+
+                    <input type="button" class="Buttons" id="ClearButton" value="Del" onclick=" clearError() ;  clearScreen() ">
+                    <input type="button" class="Buttons" id="ClearButton" value="C" onclick=" screenFlash() ">
+                    <input type="button" class="Buttons" id="Btn1" value="H" onclick=" checkHistory() ">
+                    <input type="button" class="Buttons" id="Btn1" value="log" onclick=" clearError() ; logOperation() ;  assignOperator('log')">  <br />
+
+    <!------------------- Second Row Of Buttons--------------------------------------->
+
+                    <input type="button" class="Buttons" id="BtnRoot" value="&#8730" onclick=" clearError() ; squareRootOperation(); assignOperator('sqrt')">
+                    <input type="button" class="Buttons" id="Btn1" value="^" onclick=" clearError() ; powerOperation() ; assignOperator('^')">
+                    <input type="button" class="Buttons" id="Btn1" value="%" onclick=" clearError() ; modulusOperation() ; assignOperator('%')">
+                    <input type="button" class="Buttons" id="Btn1" value="/" onclick=" clearError() ;  divisionOperation() ; assignOperator('/')"> <br />
+
+    <!------------------- Third Row Of Buttons--------------------------------------->
+
+                    <input type="button" class="Buttons" id="Btn1" value="1" onclick=" clearError() ; Caluu.Display.value+='1'">
+                    <input type="button" class="Buttons" id="Btn1" value="2" onclick=" clearError() ; Caluu.Display.value+='2'">
+                    <input type="button" class="Buttons" id="Btn1" value="3" onclick=" clearError() ; Caluu.Display.value+='3'">
+                    <input type="button" class="Buttons" id="Btn1" value="+" onclick=" clearError() ;  sumOperation(); assignOperator('+') "> <br />
+
+    <!------------------- Fourth Row Of Buttons--------------------------------------->
+
+                    <input type="button" class="Buttons" id="Btn1" value="4" onclick=" clearError() ; Caluu.Display.value+='4'">
+                    <input type="button" class="Buttons" id="Btn1" value="5" onclick=" clearError() ; Caluu.Display.value+='5'">
+                    <input type="button" class="Buttons" id="Btn1" value="6" onclick=" clearError() ; Caluu.Display.value+='6'">
+                    <input type="button" class="Buttons" id="Btn1" value="-" onclick=" clearError() ;  minusOperation() ; assignOperator('-')"> <br />
+
+    <!------------------- Fifth Row Of Buttons--------------------------------------->
+
+                    <input type="button" class="Buttons" id="Btn1" value="7" onclick=" clearError() ; Caluu.Display.value+='7'">
+                    <input type="button" class="Buttons" id="Btn1" value="8" onclick=" clearError() ; Caluu.Display.value+='8'">
+                    <input type="button" class="Buttons" id="Btn1" value="9" onclick=" clearError() ; Caluu.Display.value+='9'">
+                    <input type="button" class="Buttons" id="Btn1" value="x" onclick=" clearError() ;  timesOperation() ; assignOperator('x')"> <br />
+
+    <!------------------- Sixth Row Of Buttons--------------------------------------->
+
+                    <input type="button" class="Buttons" id="Btn1" value="0" onclick=" clearError() ; Caluu.Display.value+='0'">
+                    <input type="button" class="Buttons" id="Btn1" value="." onclick=" clearError() ; dotOperator()">
+                    <input type="button" class="Buttons" id="Btn1" value="00"onclick=" clearError() ; Caluu.Display.value+='00'">
+                    <input type="button" class="Buttons" id="Btn1" value="=" onclick="result()"> 
+
+                    </div> <!--- Buttons Closing Tag------>
+
+                    <!-- <br /> <br /> <br /> ----------------- Reserved Space For Future Use--------------- -->
+
+                    <h3 id="Footer"><i>Powered By Brungas.com</i></h3> <!--- Footer Message ------>
+
+                </form> <!------------------- Inner Frame Ends  (Form-End) ----------------------->
+
+            </div> <!------------------- Outer Frame Ends----------------->
+
+            <!------------------- Scripts For The Functions ----------------->
+
+        <script src="CaluuFunctions.js"></script>
+
+    </body> <!------------------- Body Ends Here----------------->
+
+</html> <!------------------- Ends Of Html Document For Caluu App----------------->
+
+
+<!-------------------------------------------- This App Develeped By Muddy (Optimist#700) ------------------------------------------------------------->
+<!------------------------------------------------------ All Rights Reserved --------------------------------------------------------------------------->

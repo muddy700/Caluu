@@ -1,0 +1,119 @@
+/* <!-------------------------------------------- This App Develeped By Muddy (Optimist#700) ------------------------------------------------------------->
+   <!------------------------------------------------------ All Rights Reserved ---------------------------------------------------------------------------> */
+
+/* Css For Caluu App */
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+
+#Frame{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    background-color: cyan;
+}
+
+#Form-Frame{
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/images/background.png");
+    }
+    
+ #Title-Area{
+    width: 100%;
+    height:50px;
+}
+
+#Name-Area{
+    width: 60%;
+    height: 50px;
+    float: left;
+    /* border: 1px solid rgb(155, 150, 150); */
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: cyan;
+    background-image: url("assets/images/background.png");
+
+    }
+
+#Time-Area{
+    width: 40%;
+    height: 50px;
+    float: left;
+    /* border: 1px solid black; */
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    background-color: cyan;
+
+}
+
+#Display-Area{
+    width: 99%;
+    height:80px;
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: turquoise; */
+}
+
+#Button-Area{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#Power{
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#Power:active {
+/* background-color: black; */
+transform: translateY(4px);
+}
+
+#ClearButton{
+    background-color: red;
+}
+
+.Buttons{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 24%;
+    height: 6%;
+    border-radius: 10px;
+    /* margin: 10px; */
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 2%;
+    background-color: cyan;
+    
+}
+
+.Buttons:active {
+/* background-color: black; */
+transform: translateY(4px);
+}
+
+#Footer{
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+/* <!-------------------------------------------- This App Develeped By Muddy (Optimist#700) ------------------------------------------------------------->
+   <!------------------------------------------------------ All Rights Reserved ---------------------------------------------------------------------------> */
